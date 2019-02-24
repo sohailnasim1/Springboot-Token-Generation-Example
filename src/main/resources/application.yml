@@ -1,0 +1,54 @@
+server:
+  port: ${PORT:8890}
+spring:
+  application:
+    name: auth-token
+  profiles:
+    active: dev
+---
+secret:
+  key:  pCk/e1Gm2f4UsPNeWwBgadLRPMiKYagpT7bz3ecrcuBbNPS1aF5WmuoZaJvgHHE/zPNXHdTne1LJxNLPdIYfIg== 
+signature:
+  algorithm:  HS512
+key:
+  expiration-in-seconds:  600
+---
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:h2:file:~/useradmindb
+    username: sa
+    driverClassName: org.h2.Driver
+    platform: h2
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect:  org.hibernate.dialect.H2Dialect 
+        namingStrategy: org.hibernate.cfg.EJB3NamingStrategy     
+    hibernate:
+      ddl-auto: update
+      
+  h2:
+    console:
+      enabled: true
+      path: /h2
+---  
+spring:
+  profiles: prod
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    username: <your oracle user>
+    password: <your oracle user password>
+    tomcat:
+      max-wait: 30000
+      max-active: 5
+      max-idle: 20
+      min-idle: 10
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect:  org.hibernate.dialect.Oracle10gDialect
+        namingStrategy: org.hibernate.cfg.EJB3NamingStrategy
