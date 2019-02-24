@@ -7,7 +7,9 @@ This project was developed in [Spring Tool Suite](http://spring.io/tools/sts)
 
 **H2  Embedded (Local) file based Database**
 
-Schema and 'USERS', 'ROLE' and USER_ROLE' tables are generated when Springboot application starts
+Schema and 'USERS', 'ROLE' and USER_ROLE' tables are generated when Springboot application starts first time
+
+Sample data for 'jdoe' user and his 'admin' role will be inserted via src/main/resources/data.sql when application starts first time
 
 URL: (http://localhost:8890/h2)
 
