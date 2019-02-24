@@ -13,7 +13,7 @@ import com.sn.auth.security.exception.ForbiddenException;
 import com.sn.auth.security.util.AuthenticationHelper;
 
 
-@RequestMapping(path = "/token", produces = "application/json")
+@RequestMapping(path = "/tokens", produces = "application/json")
 @CrossOrigin(origins = "*")
 @RestController
 public class TokenController {

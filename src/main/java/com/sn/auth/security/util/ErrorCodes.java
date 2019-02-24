@@ -3,7 +3,7 @@ package com.sn.auth.security.util;
 import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum ErrorCodes {
-	GENERAl(1), UNAUTHORIZED(2);
+	GENERAl(1), FORBIDDEN(2);
 	
 	private int errorCode;
 	

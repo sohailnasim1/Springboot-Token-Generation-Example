@@ -24,7 +24,7 @@ import org.springframework.security.web.authentication.AuthenticationFailureHand
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	
-	private static String API_URL = "/token/**";
+	private static String API_URL = "/tokens/**";
 
 	@Autowired
 	private UserDetailsAuthenticationProvider authenticationProvider;

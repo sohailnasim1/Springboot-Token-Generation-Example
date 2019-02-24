@@ -36,10 +36,10 @@ public class CustomAuthenticationFailureHandler implements AuthenticationFailure
 	@Override
 	public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response,
 			AuthenticationException exception) throws IOException, ServletException {
-		response.setStatus(HttpStatus.UNAUTHORIZED.value());
+		response.setStatus(HttpStatus.FORBIDDEN.value());
 		response.setContentType(MediaType.APPLICATION_JSON_VALUE);
 		if (exception instanceof ForbiddenException) {
-			mapper.writeValue(response.getWriter(), ErrorResponse.getErrorResponse(exception.getMessage(), ErrorCodes.UNAUTHORIZED, HttpStatus.FORBIDDEN));
+			mapper.writeValue(response.getWriter(), ErrorResponse.getErrorResponse(exception.getMessage(), ErrorCodes.FORBIDDEN, HttpStatus.FORBIDDEN));
 	
 		} else {
 			mapper.writeValue(response.getWriter(), ErrorResponse.getErrorResponse(exception.getMessage(), ErrorCodes.GENERAl, HttpStatus.FORBIDDEN));

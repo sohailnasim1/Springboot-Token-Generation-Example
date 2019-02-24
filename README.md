@@ -52,7 +52,7 @@ http://localhost:8890/swagger-ui.html
 
 ## Examples
 
-* POST: http://localhost:8890/token/create
+* POST: http://localhost:8890/tokens/create
 
 
 **Request:**
