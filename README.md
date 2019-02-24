@@ -66,7 +66,7 @@ Body:
 }
 ```
 
-**Example Respnse**
+**Example Response**
 
 The generated token is valid for 10 minutes
 
