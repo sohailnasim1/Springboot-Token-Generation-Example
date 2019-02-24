@@ -1,4 +1,4 @@
-# Springboot Json Web Token (JWT) Generation  example
+# Springboot JSON Web Token (JWT) Generation  example
 Contributor: **Sohail Nasim**
 
 This project was developed in [Spring Tool Suite](http://spring.io/tools/sts)
