@@ -70,8 +70,7 @@ Body:
 
 **Example Response**
 
-The generated token is valid for 10 minutes
-
+The generated token was valid for 10 minutes after the creation time and is expired now.
 ```
 {
     "id": "ae1bbe02-4846-4583-9fea-ba2de7d7fc27",
