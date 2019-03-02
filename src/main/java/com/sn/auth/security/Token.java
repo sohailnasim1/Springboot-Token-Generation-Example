@@ -19,6 +19,7 @@ public class Token implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private String id;
 	private String token;
-	private Date expiry;
+	private long issueAt;
+	private int expiry;
 
 }

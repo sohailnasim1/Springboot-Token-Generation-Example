@@ -55,6 +55,6 @@ public class AuthenticationHelper {
     		    .setId(tokenId)
     		    .signWith(key, SignatureAlgorithm.valueOf(signatureAlgorithm))
     		    .compact();
-    	return new Token(tokenId, base64EncodedToken, calendar.getTime());
+    	return new Token(tokenId, base64EncodedToken, issueDate.getTime(), Integer.parseInt(keyExpirationInSeconds));
     }
 }

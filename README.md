@@ -73,8 +73,9 @@ Body:
 The generated token was valid for 10 minutes after the creation time and is expired now.
 ```
 {
-    "id": "ae1bbe02-4846-4583-9fea-ba2de7d7fc27",
-    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqZG9lIiwicm9sZXMiOlsiYWRtaW4iXSwiZXhwIjoxNTUxMDUwNjQ4LCJpYXQiOjE1NTEwNTAwNDgsImp0aSI6ImFlMWJiZTAyLTQ4NDYtNDU4My05ZmVhLWJhMmRlN2Q3ZmMyNyJ9.mZdK0cAN0E7ASfFvzWXBAnzkz6yqQjJark9f9OEWkZ05EJqcUEcoxsoVowXwnJaheByTOWrpSG0LST1up8boSQ",
-    "expiry": 1551050648985
+    "id": "cd84ab81-698f-45c1-a00c-117065ff3e83",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqZG9lIiwicm9sZXMiOlsiYWRtaW4iXSwiZXhwIjoxNTUxNTQ4MDc3LCJpYXQiOjE1NTE1NDc0NzcsImp0aSI6ImNkODRhYjgxLTY5OGYtNDVjMS1hMDBjLTExNzA2NWZmM2U4MyJ9.8au11Dpa-giBIVWpRHfuI8ua_MENwXM9NAC9NKenOIpGoYXUomYInJJW8Pcf7FOvausxWNMpVBft7__poI9qug",
+    "issueAt": 1551547477947,
+    "expiry": 600
 }
 ```
