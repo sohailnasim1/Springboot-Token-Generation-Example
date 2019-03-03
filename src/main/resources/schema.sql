@@ -1,4 +1,4 @@
-create schema if not exists useradmindb;
+create schema if not exists userdb;
 
 create table if not exists users (
 	username varchar(16) primary key,
