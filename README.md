@@ -13,7 +13,7 @@ Sample data for 'jdoe' user and his 'admin' role will be inserted via src/main/r
 
 URL: (http://localhost:8890/h2)
 
-DB Name: useradmindb
+DB Name: userdb
 
 Username: sa
 
